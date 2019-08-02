@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: -webkit-linear-gradient(left top, #e5eec1,#a2d4ab ,#3eaca8,#547a82,#5a5050);
+}
+.wrapper{
+    position: relative;
+    margin: 10px auto;
+    width: 600px;
+    height: 500px;
+    /* border: 1px solid #000; */
+
+}
+.chessboard{
+    /* box-shadow: 4px 4px 6px #167c80; */
+    display: block;
+    position: absolute;
+    left:10px;
+    top:10px;
+    border: 1px solid #055a5b;
+    z-index: 10;
+    }
+
+.btn{
+    position: absolute;
+    right:10px;
+    margin-top:30%;
+}
+
+.btn ul li button{
+    display: inline-block;
+    width:80px;
+    height:28px;
+    margin:10px auto;
+    outline: none;
+    color:#d1e9e3;
+    line-height:16px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #abcee2;
+    border-radius:30px;
+    background: transparent;
+    cursor: pointer;
+    
+}
+.btn ul li button{
+    box-shadow:5px 0 6px #055a5b;
+    height:30px;
+}
+
+.wrapper ul li .reBtn{
+    margin-top: 30px;
+}
+
+#chess {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    left:10px;
+    top:10px;
+    z-index: 500;
+    /* border: 1px solid #a3b5b6; */
+   
+}
+@font-face {
+    font-family:'myFont'; /*这个相当于给字体起个名字，比如“微软雅黑”*/
+    src:url('accent.ttf'); /*指定字体的路径*/
+}
+.start{
+    width:500px;
+    height:140px;
+    /* border:1px solid #fff; */
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    margin-top:50%;
+    left: -300px;
+    top: -100px;
+    z-index: 1001;
+}
+.start p{
+
+    font-size: 50px;
+    font-family:myFont;
+    color:#e5eec1;
+    text-shadow: 7px 7px 10px #000;
+    animation: fontchange 2s ;
+
+}
+@keyframes fontchange{
+    0%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 70px;
+    }
+}
+.grid {
+    width:23px;
+    height: 23px;
+    position: absolute;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-origin: content-box;
+    background-size: 130% 130%;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 1000;
+    /* border: 1px solid #000; */
+}
+
+
+
